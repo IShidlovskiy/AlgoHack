@@ -1,7 +1,7 @@
 test_data = [7, 1, 3, 2, 8]
 
 
-def sort(data: list):
+def sorting(data: list):
     if not data:
         return []
     sorted_data = [data.pop()]
@@ -14,4 +14,6 @@ def sort(data: list):
     return sorted_data
 
 
-print(sort(test_data))
+py_sort = sorted(test_data)
+assert sorting(test_data) == py_sort
+assert sorting([]) == []
