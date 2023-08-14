@@ -16,6 +16,6 @@ def bin_search(nums: list, val: int) -> int:
     return -1
 
 
-print(bin_search(numbers, look_up))
-print(bin_search(numbers, 777))
+for i in range(0, 1000):
+    assert bin_search(numbers, i) == i
 
