@@ -2,6 +2,8 @@ test_data = [1, 2, 9, 5, 7, 8]
 
 
 def sort(data: list) -> list:
+    if not data:
+        return data
     for k in range(len(data) - 1):
         max_val = data[0]  # если список не пустой, иначе сломается
         max_pos = 0
